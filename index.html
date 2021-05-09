@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Here detect number of right and wrong words during typing also hightlights them.">
+    <meta name="keywords" content="typing speed test, API project, JavaScript project">
+    <meta name="author" content="Arnab Khan">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" type="text/css" href="typing-test.css"> 
+</head>
+<body>
+    <div class="manu">
+        <div class="start_stop" onclick="startStop()">START</div>
+        <div class="new_text" onclick="changeText();">CHANGE TEXT</div>
+    </div>
+    <div class="speed_display"></div>
+    <div class="writting_content"></div>
+    <textarea class="writting_area" placeholder="Click here to start writting..." onkeypress="keyPress()"></textarea>
+    <div class="writting_check"></div>
+<script src="typing-test.js"></script>
+</body>
+</html>

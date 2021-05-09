@@ -1,0 +1,78 @@
+*{
+    background-color: rgb(176, 231, 205);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.manu{
+    background-color: azure;
+    position: absolute;
+    width: 100vw;
+    height: 7vh;
+    z-index: 1;
+}
+.start_stop{
+    background-color: rgb(107, 230, 107);
+    position: absolute;
+    height: 90%;
+    width: 40%;
+    top: 5%;
+    left: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    border-radius: 20%;
+}
+.new_text{
+    background-color: rgb(204, 135, 236);
+    position: absolute;
+    height: 90%;
+    width: 40%;
+    top: 5%;
+    right: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    border-radius: 20%;
+}
+.writting_content{
+    background-color: rgb(173, 240, 234);
+    position: absolute;
+    height: 46vh;
+    width: 100vw;
+    top: 7vh;
+    padding: 2%;
+    overflow: auto;
+}
+.writting_area{
+    background-color: rgb(241, 237, 167);
+    position: absolute;
+    height: 46.7vh;
+    width: 100vw;
+    top: 53.3vh;
+    padding: 2%;
+    overflow: auto;
+}
+.writting_check{
+    background-color: rgb(241, 237, 167);
+    position: absolute;
+    height: 38.7vh;
+    width: 100vw;
+    top: 61.3vh;
+    padding: 2%;
+    overflow: auto;
+    display: none;
+}
+.speed_display{
+    background-color: rgb(250, 217, 246);
+    position: absolute;
+    height: 15vh;
+    width: 100vw;
+    top: 7.5vh;
+    padding: 2%;
+    overflow: auto;
+    display: none;
+}
