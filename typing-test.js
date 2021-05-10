@@ -53,7 +53,7 @@ function startStop() {
             }
             else {
                 total_incorrect++;
-                console.log(total_incorrect);
+                // console.log(total_incorrect);
                 check_correct.push("0");
             }           
         }
@@ -145,16 +145,11 @@ fetch (story_link)
 .then(x=> x.text())
 .then(y=>
         // console.log(y)
-        JSON.parse(y).story //convert story to object and take only story portion
+        story_text=JSON.parse(y).story //convert story to object and take only story portion
     )
 .then(z=>
-        sessionStorage.setItem("story_text",z) //store story in section storage
+    document.getElementsByClassName("writting_content")[0].innerHTML=z
     );
-    // end fetch 
-
-    story_text=sessionStorage.getItem("story_text"); //get story from section storage
-    // console.log(story_text);
-    document.getElementsByClassName("writting_content")[0].innerHTML=story_text;
 }
  // end collect story from api 
 
@@ -198,7 +193,3 @@ function keyPress() {
 // end on key press function to stop enter botton and to stop double space
 
 story(); //call change story function
-
-
-
-
